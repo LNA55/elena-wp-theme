@@ -11,7 +11,7 @@ Template Name: Sans bloc blanc
 <?php endif; ?>
 
 <!-- used to set the main background image -->
-<div id="imageBackground" style="background-image:url(<?php echo $bg_picture; ?>"></div>
+<div id="imageBackground" style="background-image:url(<?php echo $bg_picture; ?>)"></div>
 
 <div class="container-fluid no-padding-xs">
   <div class="row no-margin-xs">
