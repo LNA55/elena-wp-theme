@@ -299,9 +299,9 @@ function kolumn_customizer( $wp_customize ) {
 
 
 
-    // if ( $wp_customize->is_preview() && ! is_admin() ) {
-    //     add_action( 'wp_footer', 'example_customize_preview', 21);
-    // }
+    if ( $wp_customize->is_preview() && ! is_admin() ) {
+        add_action( 'wp_footer', 'example_customize_preview', 21);
+    }
 
 }
 add_action( 'customize_register', 'kolumn_customizer' );

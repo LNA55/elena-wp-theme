@@ -62,6 +62,10 @@ text-decoration: none;
   margin: 20px auto;
 }
 
+.img-responsive {
+  margin: 20px auto;
+}
+
 /*Footer Social Media styles*/
 .footerLink {
     font-size: 18px;
