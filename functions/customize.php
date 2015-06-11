@@ -88,220 +88,220 @@ function kolumn_customizer( $wp_customize ) {
 
 
 
-    $wp_customize->add_section('options', array(
-        'title' => __( 'Options', 'kolumntheme' ),
-        'priority' => 3,
-        'capability' => 'edit_theme_options'
-    ));
+    // $wp_customize->add_section('options', array(
+    //     'title' => __( 'Options', 'kolumntheme' ),
+    //     'priority' => 3,
+    //     'capability' => 'edit_theme_options'
+    // ));
 
-    /* SEARCH */
-    $wp_customize->add_setting('search', array('default' => true));
-    $wp_customize->add_control('search', array(
-        'label' => __( 'Show search', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'checkbox'
-    ));
+    // /* SEARCH */
+    // $wp_customize->add_setting('search', array('default' => true));
+    // $wp_customize->add_control('search', array(
+    //     'label' => __( 'Show search', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'checkbox'
+    // ));
 
-    /* RELATIVE DATE */
-    $wp_customize->add_setting('relative_date', array('default' => true));
-    $wp_customize->add_control('relative_date', array(
-        'label' => __( 'Use relative dates ("n days ago")', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'checkbox'
-    ));
+    // /* RELATIVE DATE */
+    // $wp_customize->add_setting('relative_date', array('default' => true));
+    // $wp_customize->add_control('relative_date', array(
+    //     'label' => __( 'Use relative dates ("n days ago")', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'checkbox'
+    // ));
 
-    /* NEXT PREV LINKS ON POST */
-    $wp_customize->add_setting('prev_next', array('default' => true));
-    $wp_customize->add_control('prev_next', array(
-        'label' => __( 'Show "Prev / Next" links on Post', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'checkbox'
-    ));
+    // /* NEXT PREV LINKS ON POST */
+    // $wp_customize->add_setting('prev_next', array('default' => true));
+    // $wp_customize->add_control('prev_next', array(
+    //     'label' => __( 'Show "Prev / Next" links on Post', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'checkbox'
+    // ));
 
-    /* SOCIAL SHARE LINK ON POST */
-    $wp_customize->add_setting('share', array('default' => true));
-    $wp_customize->add_control('share', array(
-        'label' => __( 'Show Like & Tweet on Post', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'checkbox'
-    ));
+    // /* SOCIAL SHARE LINK ON POST */
+    // $wp_customize->add_setting('share', array('default' => true));
+    // $wp_customize->add_control('share', array(
+    //     'label' => __( 'Show Like & Tweet on Post', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'checkbox'
+    // ));
 
-    /* GOOGLE ANALYTICS */
-    $wp_customize->add_setting('google_analytics', array('default' => ''));
-    $wp_customize->add_control('google_analytics', array(
-        'label' => __( 'Google Analytics UID', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'text'
-    ));
+    // /* GOOGLE ANALYTICS */
+    // $wp_customize->add_setting('google_analytics', array('default' => ''));
+    // $wp_customize->add_control('google_analytics', array(
+    //     'label' => __( 'Google Analytics UID', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'text'
+    // ));
 
-    /* DISQUS */
-    $wp_customize->add_setting('disqus', array('default' => ''));
-    $wp_customize->add_control('disqus', array(
-        'label' => __( 'Use Disqus instead of traditional comments (enter your Disqus Shortname)', 'kolumntheme' ),
-        'section' => 'options',
-        'type' => 'text'
-    ));
-
-
+    // /* DISQUS */
+    // $wp_customize->add_setting('disqus', array('default' => ''));
+    // $wp_customize->add_control('disqus', array(
+    //     'label' => __( 'Use Disqus instead of traditional comments (enter your Disqus Shortname)', 'kolumntheme' ),
+    //     'section' => 'options',
+    //     'type' => 'text'
+    // ));
 
 
 
 
-    $wp_customize->add_section('social', array(
-        'title' => __( 'Social Networks', 'kolumntheme' ),
-        'priority' => 4,
-        'capability' => 'edit_theme_options'
-    ));
-
-    /* FACEBOOK */
-    $wp_customize->add_setting('facebook', array('default' => ''));
-    $wp_customize->add_control('facebook', array(
-        'label' => __( 'Facebook profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* TWITTER */
-    $wp_customize->add_setting('twitter', array('default' => ''));
-    $wp_customize->add_control('twitter', array(
-        'label' => __( 'Twitter profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* INSTAGRAM */
-    $wp_customize->add_setting('instagram', array('default' => ''));
-    $wp_customize->add_control('instagram', array(
-        'label' => __( 'Instagram profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* BEHANCE */
-    $wp_customize->add_setting('behance', array('default' => ''));
-    $wp_customize->add_control('behance', array(
-        'label' => __( 'Behance profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* GOOGLE+ */
-    $wp_customize->add_setting('googleplus', array('default' => ''));
-    $wp_customize->add_control('googleplus', array(
-        'label' => __( 'Google+ profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* PINTEREST */
-    $wp_customize->add_setting('pinterest', array('default' => ''));
-    $wp_customize->add_control('pinterest', array(
-        'label' => __( 'Pinterest profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* VIMEO */
-    $wp_customize->add_setting('vimeo', array('default' => ''));
-    $wp_customize->add_control('vimeo', array(
-        'label' => __( 'Vimeo profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* YOUTUBE */
-    $wp_customize->add_setting('youtube', array('default' => ''));
-    $wp_customize->add_control('youtube', array(
-        'label' => __( 'YouTube channel/profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* DRIBBBLE */
-    $wp_customize->add_setting('dribbble', array('default' => ''));
-    $wp_customize->add_control('dribbble', array(
-        'label' => __( 'Dribbble profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* FLICKR */
-    $wp_customize->add_setting('flickr', array('default' => ''));
-    $wp_customize->add_control('flickr', array(
-        'label' => __( 'Flickr profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* GITHUB */
-    $wp_customize->add_setting('github', array('default' => ''));
-    $wp_customize->add_control('github', array(
-        'label' => __( 'Github profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* LINKEDIN */
-    $wp_customize->add_setting('linkedin', array('default' => ''));
-    $wp_customize->add_control('linkedin', array(
-        'label' => __( 'LinkedIn profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* EMAIL */
-    $wp_customize->add_setting('email', array('default' => ''));
-    $wp_customize->add_control('email', array(
-        'label' => __( 'Email address', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* SKYPE */
-    $wp_customize->add_setting('skype', array('default' => ''));
-    $wp_customize->add_control('skype', array(
-        'label' => __( 'Skype ID', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* SOUNDCLOUD */
-    $wp_customize->add_setting('soundcloud', array('default' => ''));
-    $wp_customize->add_control('soundcloud', array(
-        'label' => __( 'SoundCloud profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* TUMBLR */
-    $wp_customize->add_setting('tumblr', array('default' => ''));
-    $wp_customize->add_control('tumblr', array(
-        'label' => __( 'Tumblr URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* REDDIT */
-    $wp_customize->add_setting('reddit', array('default' => ''));
-    $wp_customize->add_control('reddit', array(
-        'label' => __( 'Reddit profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
-
-    /* DEVIANTART */
-    $wp_customize->add_setting('deviantart', array('default' => ''));
-    $wp_customize->add_control('deviantart', array(
-        'label' => __( 'DeviantArt profile URL', 'kolumntheme' ),
-        'section' => 'social',
-        'type' => 'text'
-    ));
 
 
+    // $wp_customize->add_section('social', array(
+    //     'title' => __( 'Social Networks', 'kolumntheme' ),
+    //     'priority' => 4,
+    //     'capability' => 'edit_theme_options'
+    // ));
 
-    if ( $wp_customize->is_preview() && ! is_admin() ) {
-        add_action( 'wp_footer', 'example_customize_preview', 21);
-    }
+    // /* FACEBOOK */
+    // $wp_customize->add_setting('facebook', array('default' => ''));
+    // $wp_customize->add_control('facebook', array(
+    //     'label' => __( 'Facebook profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* TWITTER */
+    // $wp_customize->add_setting('twitter', array('default' => ''));
+    // $wp_customize->add_control('twitter', array(
+    //     'label' => __( 'Twitter profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* INSTAGRAM */
+    // $wp_customize->add_setting('instagram', array('default' => ''));
+    // $wp_customize->add_control('instagram', array(
+    //     'label' => __( 'Instagram profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* BEHANCE */
+    // $wp_customize->add_setting('behance', array('default' => ''));
+    // $wp_customize->add_control('behance', array(
+    //     'label' => __( 'Behance profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* GOOGLE+ */
+    // $wp_customize->add_setting('googleplus', array('default' => ''));
+    // $wp_customize->add_control('googleplus', array(
+    //     'label' => __( 'Google+ profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* PINTEREST */
+    // $wp_customize->add_setting('pinterest', array('default' => ''));
+    // $wp_customize->add_control('pinterest', array(
+    //     'label' => __( 'Pinterest profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* VIMEO */
+    // $wp_customize->add_setting('vimeo', array('default' => ''));
+    // $wp_customize->add_control('vimeo', array(
+    //     'label' => __( 'Vimeo profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* YOUTUBE */
+    // $wp_customize->add_setting('youtube', array('default' => ''));
+    // $wp_customize->add_control('youtube', array(
+    //     'label' => __( 'YouTube channel/profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* DRIBBBLE */
+    // $wp_customize->add_setting('dribbble', array('default' => ''));
+    // $wp_customize->add_control('dribbble', array(
+    //     'label' => __( 'Dribbble profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* FLICKR */
+    // $wp_customize->add_setting('flickr', array('default' => ''));
+    // $wp_customize->add_control('flickr', array(
+    //     'label' => __( 'Flickr profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* GITHUB */
+    // $wp_customize->add_setting('github', array('default' => ''));
+    // $wp_customize->add_control('github', array(
+    //     'label' => __( 'Github profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* LINKEDIN */
+    // $wp_customize->add_setting('linkedin', array('default' => ''));
+    // $wp_customize->add_control('linkedin', array(
+    //     'label' => __( 'LinkedIn profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* EMAIL */
+    // $wp_customize->add_setting('email', array('default' => ''));
+    // $wp_customize->add_control('email', array(
+    //     'label' => __( 'Email address', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* SKYPE */
+    // $wp_customize->add_setting('skype', array('default' => ''));
+    // $wp_customize->add_control('skype', array(
+    //     'label' => __( 'Skype ID', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* SOUNDCLOUD */
+    // $wp_customize->add_setting('soundcloud', array('default' => ''));
+    // $wp_customize->add_control('soundcloud', array(
+    //     'label' => __( 'SoundCloud profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* TUMBLR */
+    // $wp_customize->add_setting('tumblr', array('default' => ''));
+    // $wp_customize->add_control('tumblr', array(
+    //     'label' => __( 'Tumblr URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* REDDIT */
+    // $wp_customize->add_setting('reddit', array('default' => ''));
+    // $wp_customize->add_control('reddit', array(
+    //     'label' => __( 'Reddit profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+    // /* DEVIANTART */
+    // $wp_customize->add_setting('deviantart', array('default' => ''));
+    // $wp_customize->add_control('deviantart', array(
+    //     'label' => __( 'DeviantArt profile URL', 'kolumntheme' ),
+    //     'section' => 'social',
+    //     'type' => 'text'
+    // ));
+
+
+
+    // if ( $wp_customize->is_preview() && ! is_admin() ) {
+    //     add_action( 'wp_footer', 'example_customize_preview', 21);
+    // }
 
 }
 add_action( 'customize_register', 'kolumn_customizer' );
