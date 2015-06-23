@@ -10,6 +10,24 @@ Text Domain: elena
 Tags: mochi
 */
 
+/* last fixes for Chrome */
+.footer-column .list-inline {
+  margin-right: 10px;
+  margin-bottom: 0;
+   -webkit-margin-before: 0; 
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+/* Elena, you can change these classes */
+
 .SoustitrePage {
   font-size: 16px;
   text-transform: uppercase;
